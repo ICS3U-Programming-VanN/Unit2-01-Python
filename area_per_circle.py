@@ -3,22 +3,22 @@
 # Created by: Van Nguyen
 # Created on: September 21, 2022
 # This program calculates and displays the area and circumference of a circle
-# with a diameter of 13cm.
+# with a radius of 15mm.
 
 import math
 
 
 def main():
     # Initialize Variables
-    diameter = 13
-    radius = diameter / 2
+    radius = 15
+    diameter = radius * 2
     # Calculates Area and Circumference
-    area = round(math.pi * radius**2, 2)
-    circumference = round(math.pi * diameter, 2)
+    area = math.pi * radius**2
+    circumference = math.pi * diameter
     # Outputs the Area and Circumference to the user
-    print("For a circle with a diameter of 13cm:")
-    print(f"Area: {area}cm^2")
-    print(f"Circumference: {circumference}cm")
+    print("For a circle with a radius of 15mm:")
+    print(f"Area: {area}mm^2")
+    print(f"Circumference: {circumference}mm")
 
 
 if __name__ == "__main__":
